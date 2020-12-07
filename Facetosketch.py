@@ -12,7 +12,7 @@ except:
   try:
     import numpy as np
   except:
-    ImportError("Unable to Import! Check Python Version!")
+    raise ImportError("Unable to Import! Check Python Version!")
 try:  
   import imageio
 except:
@@ -20,7 +20,7 @@ except:
   try:
     import imageio
   except:
-    ImportError("Unable to Import! Check Python Version!")
+    raise ImportError("Unable to Import! Check Python Version!")
 try:  
   import scipy.ndimage
 except:
@@ -28,7 +28,7 @@ except:
   try:
     import scipy.ndimage
   except:
-    ImportError("Unable to Import! Check Python Version!")
+    raise ImportError("Unable to Import! Check Python Version!")
 try:  
   import cv2
 except:
@@ -36,7 +36,7 @@ except:
   try:
     import cv2
   except:
-    ImportError("Unable to Import! Check Python Version!")
+    raise ImportError("Unable to Import! Check Python Version!")
 try:  
   from face_extractor import Extractor
 except:
